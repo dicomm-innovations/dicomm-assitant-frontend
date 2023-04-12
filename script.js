@@ -48,7 +48,7 @@ const escapeScript = unsafe => {
 }
 
 const includeDicommContext = (safeText) => {
-  return /dicomm|mccann|developer|coder|developed/i.test(safeText) ? safeText : safeText + " Dicomm McCann";
+  return /dicomm|mccann|developer|coder|artfulprogrammer|developed|goal/i.test(safeText) ? safeText : safeText + " Dicomm McCann";
 
 }
 

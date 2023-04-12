@@ -103,7 +103,7 @@
 }
 
 .chatbot__messages li.is-user {
-    text-align: right;
+    text-align: left;
     display: inline-flex;
     align-self: flex-end;
 }
