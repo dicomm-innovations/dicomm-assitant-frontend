@@ -1,7 +1,7 @@
 const accessToken = '3796899bd37c423bad3a21a25277bce0';
-const baseUrl = 'http://127.0.0.1:5000/chat';
+const baseUrl = 'https://dicomm-ai-assistant-v1-api.onrender.com/chat/dmc/';
 const loader = `<span class='loader'><span class='loader__dot'></span><span class='loader__dot'></span><span class='loader__dot'></span></span>`;
-const errorMessage = 'My apologies, I\'m not available at the moment, however, feel free to call our support team directly 0123456789.';
+const errorMessage = 'My apologies, I\'m not available at the moment, however, feel free to call our support team directly on 0123456789.';
 const urlPattern = /(\b(https?|ftp):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/gim;
 const $document = document;
 const $chatbot = $document.querySelector('.chatbot');
@@ -48,7 +48,7 @@ const escapeScript = unsafe => {
 }
 
 const includeDicommContext = (safeText) => {
-  return /dicomm|mccann|developer|coder|artfulprogrammer|developed|goal/i.test(safeText) ? safeText : safeText + " Dicomm McCann";
+  return /dicomm|mccann|developer|coder|developed|goal/i.test(safeText) ? safeText : safeText + " Dicomm McCann";
 
 }
 
